@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=Point
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Point\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=Point()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Point\r\n
+comment2.params=x\ y
+comment2.target=Point(int,\ int)
+comment2.text=\r\n\ Constructor\ for\ objects\ of\ class\ Point\r\n\ \r\n\ @param\ x\ location\ along\ x-axis\r\n\ @param\ y\ location\ along\ y-axis\r\n
+comment3.params=
+comment3.target=int\ getX()
+comment4.params=
+comment4.target=int\ getY()
+comment5.params=x\ y
+comment5.target=void\ set(int,\ int)
+comment6.params=
+comment6.target=java.lang.Object\ clone()
+comment7.params=obj
+comment7.target=boolean\ equals(java.lang.Object)
+numComments=8
