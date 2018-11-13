@@ -1,0 +1,42 @@
+package jobalbarr.csci210;
+
+import java.util.Random;
+
+public class Knapsack {
+
+	public static void main(String[] args) {
+		new Knapsack().go();
+	}
+
+	Random rand = new Random();
+
+	String[] lbl = { "A", "B", "C", "D", "E", "F", "G" };
+	double[] val = { 9, 5, 10, 20, 3, 14, 47 };
+	double[] wt = { 4, 3, 7, 14, 1, 19, 31 };
+	// boolean[] pick;
+	boolean[] pick = { true, false, true, false, true };
+
+	void go() {
+		pick = new boolean[lbl.length];
+		for (int i = 0; i < lbl.length; i++) {
+			pick[i] = rand.nextInt(2) == 0;
+		}
+		double totalValue = 0;
+		double totalWeight = 0;
+		double finalWeight = 50;
+
+		for (int i = 0; i < lbl.length; i++) {
+			if ((pick[i]) && ((totalWeight += wt[i]) <= (finalWeight))) {
+				totalValue += val[i];
+				totalWeight += wt[i];
+			}
+			else {
+				
+				continue;
+			}
+		}
+
+		System.out.printf("Total Value: " + totalValue + "\nTotal Weight: " + totalWeight);
+
+	}
+}
